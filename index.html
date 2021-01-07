@@ -6,23 +6,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="js/strings.js"></script>
     <script src="js/internationalisation.js"></script>
+    <script src="js/base.js"></script>
     <link rel="stylesheet" href="css/base.css">
     <title translation="title"></title>
 </head>
 <body>
 
-<ul>
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="#contact">Contact</a></li>
+<ul id="navbar">
+    <li><a class="active" href="html/intro.html" translation="intro"></a></li>
     <li><a onclick="switchLanguage();" translation="lang" translation_attr_name="title"></a></li>
 </ul>
-
+<div class="nav_bar_spacer"></div>
 <div class="main_text">
-    <h1 translation="title" style="margin-top: 0"></h1>
-    <p>The navbar will <strong>stick</strong> to the top when you reach its scroll position.</p>
-
-    <button translation="title" translation_attr_name="title"></button>
+    <h2 translation="title" style="margin: 0;"></h2>
+    <p translation="intro_text" class="first_p_after_main_h"></p>
 </div>
 </body>
 </html>

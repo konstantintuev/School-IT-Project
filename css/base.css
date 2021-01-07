@@ -1,8 +1,16 @@
 body {
-    font-size: 28px;
-    margin: 16px;
+    font-size: 14pt;
+    margin: 0;
     font-family: 'Open Sans', sans-serif;
     background: url("../imgs/silvia-trigo-kAE6Kd7W2UA-unsplash.jpg") center center / cover no-repeat fixed;
+}
+
+#navbar {
+    position: fixed;
+    display: block;
+    transition: top 0.3s;
+    width: 100%;
+    z-index: 9999;
 }
 
 ul {
@@ -10,11 +18,14 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #EEEEEE;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
     top: 0;
-    margin: -16px;
+    margin: 0;
     filter: drop-shadow(0px 0px 5px #757575);
+    height: 40pt;
+}
+
+ul * {
+    max-height: 38pt;
 }
 
 li {
@@ -38,12 +49,24 @@ li a:hover {
     background-color: #E0E0E0;
 }
 
+.nav_bar_spacer {
+    height: 40pt;
+}
+
+p {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.first_p_after_main_h {
+    margin-block-start: 16pt;
+}
+
 .main_text {
     border-radius: 20px;
     background: white;
     border: 1px solid black;
     opacity:0.91;
-    margin: 5% 0.5% 0.5%;
-    width: 95%;
-    padding: 2%;
+    margin: 2vw;
+    padding: 16pt;
 }

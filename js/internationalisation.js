@@ -1,5 +1,5 @@
 var lang = "";
-window.onload = function () {
+function initTranslations () {
     lang = localStorage.getItem("lang") || (
         (
             (
