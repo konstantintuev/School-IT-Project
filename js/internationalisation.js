@@ -20,6 +20,9 @@ function initTranslations () {
 function translateStrings() {
     [].forEach.call(document.querySelectorAll('[translation]'), function(element) {
         let text = getString(element.getAttribute("translation"));
+        if (text.length === 0) {
+            return;
+        }
         let attrToChange = element.getAttribute("translation_attr_name");
         if (attrToChange != null) {
             element.setAttribute(attrToChange, text);
@@ -28,8 +31,12 @@ function translateStrings() {
     });
 
     [].forEach.call(document.querySelectorAll('[translation_attr]'), function(element) {
+        let text = getString(element.getAttribute("translation_attr"));
+        if (text.length === 0) {
+            return;
+        }
         let attrToChange = element.getAttribute("translation_attr_name");
-        element.setAttribute(attrToChange, getString(element.getAttribute("translation_attr")));
+        element.setAttribute(attrToChange, text);
     });
 
     /*[].forEach.call(document.querySelectorAll('[translation_both]'), function(element) {

@@ -18,7 +18,7 @@ body {
     -o-user-select: none;
 }
 
-ul {
+#navbar {
     list-style-type: none;
     padding: 0;
     overflow: hidden;
@@ -29,16 +29,13 @@ ul {
     height: 40pt;
 }
 
-ul * {
-    max-height: 38pt;
-}
-
-li {
+/* match all `li` in #navbar */
+#navbar > li {
     float: left;
     height: 100%;
 }
 
-li a {
+#navbar > li a {
     display: block;
     color: #212121;
     text-align: center;
@@ -46,12 +43,12 @@ li a {
     text-decoration: none;
 }
 
-li a:active {
+#navbar > li a:active {
     background-color: #E0E0E0;
 }
 
 @media (hover: hover) and (pointer: fine) {
-    li a:hover {
+    #navbar > li a:hover {
         background-color: #E0E0E0;
     }
 }
@@ -77,6 +74,10 @@ img {
     max-width: 100%;
 }
 
+.main_h {
+    margin: 0;
+}
+
 .main_text {
     border-radius: 15px;
     background: white;
@@ -84,4 +85,37 @@ img {
     opacity:0.91;
     margin: 2vw;
     padding: 16pt;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+.column_3_imgs {
+    float: left;
+    width: 33.333%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+    .column_3_imgs {
+        width: 100%;
+    }
 }

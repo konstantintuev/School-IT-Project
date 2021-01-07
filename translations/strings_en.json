@@ -8,5 +8,21 @@
   "car": "Car",
   "title_car": "The dream car",
   "car_text_1": "Fiats are should be perfect - made for Italy in Italy.        Sadly there weakness is the fact that they are made by Italians and        no italian car has been really reliable.<br><br>        Traditional sedans and even coupes are way too large for the small        and picturesque streets in the cities so they are out too.<br><br>        The answer was actually quite simple...",
-  "car_text_2": "They are relatively affordable, reliable, have all the modern necessities one might need        and most importantly are <b>fun</b>, <b>fast</b> and <b>compact!</b><br>        And fuel efficient but who cares..."
+  "car_text_2": "They are relatively affordable, reliable, have all the modern necessities one might need        and most importantly are <b>fun</b>, <b>fast</b> and <b>compact</b>!<br>        And fuel efficient but who cares...",
+  "polo_alt": "Click for Wallpaper",
+
+  "when": "When",
+  "title_when": "The perfect timing",
+  "text_when_1": "        There <i>generally</i> only <b>two</b> conditions for choosing when to go to Italy:<br>        <ol>            <li>Weather</li>            <li>Number of tourists</li>        </ol>        This year there will be third - COVID.<br>        It should lower the number of tourists but Italy will be open for a short period of time        (for 2020 that was only July and August).<br><br>        As you can see below Italy can be both heaven and hell on Earth!",
+  "text_when_2": "The weather there has actually been quite dangerous in the past two years:",
+  "text_when_3": "After researching a bit I stumbled on <a href=\"https://avoid-crowds.com/best-time-to-visit-italy-in-2021/\">this article</a>        which explains everything quite well.<br><br>        Long story short - June is perfect for me.<br><br>        No school, great weather, less tourists and hopefully open!",
+
+  "journey": "Journey",
+  "title_journey": "The Journey!",
+  "text_journey_1": "I focused on northern Italy (despite really longing for the calmer south and it's beauty)        because frankly there are far more things one can see for a shorter amount of time.<br>        There wouldn't be too much driving but that should be better for me as I wouldn't have a ton of experience.<br><br>        The general plan is as follows:",
+  "list_journey_places": "<li>Venice: 3 Nights</li>        <li>Verona: 2 Nights</li>        <li>Varenna (Lake Como): 3 Nights</li>        <li>Bologna: 2 Nights</li>        <li>Cinque Terre: 2 Nights</li>        <li>Florence: 4 Nights</li>        <li>Rome: 3 Nights</li>",
+  "text_journey_2": "I am not going to really explain why I chose every place because...<br><br>        After these pictures doesn't it seem pointless to explain why I chose them?!",
+  "florence": "Florence",
+  "cinque-terre": "Cinque Terre",
+  "varenna-lake-como": "Varenna (Lake Como)"
 }
