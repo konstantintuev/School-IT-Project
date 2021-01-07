@@ -1,5 +1,5 @@
 var lang = "";
-function initTranslations () {
+function initTranslations (element) {
     lang = localStorage.getItem("lang") || (
         (
             (
@@ -13,7 +13,7 @@ function initTranslations () {
     if (lang !== "en" && lang !== "bg") {
         lang = "en";
     }
-    handleNewLang();
+    handleNewLang(element);
 
 }
 
@@ -56,7 +56,7 @@ function switchLanguage() {
     handleNewLang();
 }
 
-function handleNewLang() {
+function handleNewLang(element) {
     localStorage.setItem("lang", lang);
     document.documentElement.setAttribute('lang', lang);
     var xmlhttp = new XMLHttpRequest();
@@ -66,13 +66,6 @@ function handleNewLang() {
             translateStrings();
         }
     };
-    let url = new URL(document.location.href);
-    let target = url.protocol+"//"+url.hostname +":"+ url.port;
-    if (url.pathname.endsWith(".html")) {
-        target += url.pathname.substr(0, url.pathname.lastIndexOf("/"));
-    } else {
-        target += url.pathname;
-    }
-    xmlhttp.open("GET", target+"/translations/strings_"+lang+".json", true);
+    xmlhttp.open("GET", element === "intro" ? "translations/strings_"+lang+".json" : "../translations/strings_"+lang+".json", true);
     xmlhttp.send();
 }
