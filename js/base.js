@@ -14,16 +14,13 @@ window.onload = function () {
     if (element != null) {
         element.className = "active";
     }
-    let elementNavSize = document.getElementById('navbar');
-    let elementNavSizeHeight = elementNavSize.getBoundingClientRect().height;
-    console.log("elementNavSizeHeight: "+elementNavSizeHeight);
     let prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
         const currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
           navBar.style.top = "0";
       } else {
-          navBar.style.top = "-"+elementNavSizeHeight+"px";
+          navBar.style.top = "-40pt";
       }
       prevScrollpos = currentScrollPos;
     }
