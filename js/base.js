@@ -1,8 +1,8 @@
 let navBarHTML = `
-        <li><a href="/index.html" translation="intro" id="intro_nav"></a></li>
-        <li><a href="/html/car.html" translation="car" id="car_nav"></a></li>
-        <li><a href="/html/when.html" translation="when" id="when_nav"></a></li>
-        <li><a href="/html/journey.html" translation="journey" id="journey_nav"></a></li>
+        <li id="intro_nav"><a href="/index.html" translation="intro"></a></li>
+        <li id="car_nav"><a href="/html/car.html" translation="car"></a></li>
+        <li id="when_nav"><a href="/html/when.html" translation="when"></a></li>
+        <li id="journey_nav"><a href="/html/journey.html" translation="journey"></a></li>
         <li><a onclick="switchLanguage();" translation="lang" translation_attr_name="title"></a></li>
     `;
 
@@ -14,13 +14,16 @@ window.onload = function () {
     if (element != null) {
         element.className = "active";
     }
-    var prevScrollpos = window.pageYOffset;
+    let elementNavSize = document.getElementById('navbar');
+    let elementNavSizeHeight = elementNavSize.getBoundingClientRect().height;
+    console.log("elementNavSizeHeight: "+elementNavSizeHeight);
+    let prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
+        const currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
           navBar.style.top = "0";
       } else {
-          navBar.style.top = "-40pt";
+          navBar.style.top = "-"+elementNavSizeHeight+"px";
       }
       prevScrollpos = currentScrollPos;
     }

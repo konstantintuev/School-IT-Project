@@ -32,23 +32,25 @@ body {
 /* match all `li` in #navbar */
 #navbar > li {
     float: left;
-    height: 100%;
+    min-height: 40pt;
 }
 
 #navbar > li a {
+    margin: auto;
     display: block;
     color: #212121;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12pt 14pt;
     text-decoration: none;
+    font-size: 12pt;
 }
 
-#navbar > li a:active {
+#navbar > li:active {
     background-color: #E0E0E0;
 }
 
 @media (hover: hover) and (pointer: fine) {
-    #navbar > li a:hover {
+    #navbar > li:hover {
         background-color: #E0E0E0;
     }
 }
@@ -117,5 +119,15 @@ img {
     }
     .column_3_imgs {
         width: 100%;
+    }
+    #navbar > li a {
+        font-size: 10pt;
+        padding: 10pt 12pt;
+    }
+    #navbar {
+        height: 35pt;
+    }
+    .nav_bar_spacer {
+        height: 35pt;
     }
 }
