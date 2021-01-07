@@ -66,6 +66,13 @@ function handleNewLang(element) {
             translateStrings();
         }
     };
-    xmlhttp.open("GET", element === "intro" ? "translations/strings_"+lang+".json" : "../translations/strings_"+lang+".json", true);
+    let url = new URL(document.location.href);
+    let target = url.protocol+"//"+url.hostname +":"+ url.port;
+    if (url.pathname.endsWith(".html")) {
+        target += url.pathname.substr(0, url.pathname.lastIndexOf("/"));
+    } else {
+        target += url.pathname;
+    }
+    xmlhttp.open("GET", target + "/" + (element === "intro" ? "translations/strings_"+lang+".json" : "../translations/strings_"+lang+".json"), true);
     xmlhttp.send();
 }
