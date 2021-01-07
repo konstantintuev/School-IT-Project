@@ -11,6 +11,11 @@ body {
     transition: top 0.3s;
     width: 100%;
     z-index: 9999;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
 
 ul {
@@ -41,8 +46,14 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+li a:active {
     background-color: #E0E0E0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    li a:hover {
+        background-color: #E0E0E0;
+    }
 }
 
 .active {
@@ -62,8 +73,12 @@ p {
     margin-block-start: 16pt;
 }
 
+img {
+    max-width: 100%;
+}
+
 .main_text {
-    border-radius: 20px;
+    border-radius: 15px;
     background: white;
     border: 1px solid black;
     opacity:0.91;

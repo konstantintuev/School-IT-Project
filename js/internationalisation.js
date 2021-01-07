@@ -51,6 +51,7 @@ function switchLanguage() {
 
 function handleNewLang() {
     localStorage.setItem("lang", lang);
+    document.documentElement.setAttribute('lang', lang);
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -58,6 +59,6 @@ function handleNewLang() {
             translateStrings();
         }
     };
-    xmlhttp.open("GET", "translations/strings_"+lang+".json", true);
+    xmlhttp.open("GET", "/translations/strings_"+lang+".json", true);
     xmlhttp.send();
 }
