@@ -1,12 +1,12 @@
 let navBarHTMLIndex = `
-        <li id="intro_nav"><a href="index.html" translation="intro"></a></li>
+        <li id="intro_nav"><a href="" translation="intro"></a></li>
         <li id="car_nav"><a href="html/car.html" translation="car"></a></li>
         <li id="when_nav"><a href="html/when.html" translation="when"></a></li>
         <li id="journey_nav"><a href="html/journey.html" translation="journey"></a></li>
         <li><a onclick="switchLanguage();" translation="lang" translation_attr_name="title"></a></li>
     `;
 let navBarHTML = `
-        <li id="intro_nav"><a href="../index.html" translation="intro"></a></li>
+        <li id="intro_nav"><a href="../" translation="intro"></a></li>
         <li id="car_nav"><a href="../html/car.html" translation="car"></a></li>
         <li id="when_nav"><a href="../html/when.html" translation="when"></a></li>
         <li id="journey_nav"><a href="../html/journey.html" translation="journey"></a></li>
